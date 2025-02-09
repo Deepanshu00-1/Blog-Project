@@ -10,9 +10,13 @@ import blogRouter from "./routes/blogRoutes.js";
 const app = express();
 const port = process.env.PORT || 4000;
 
-const allowedOrigins = ['http://localhost:5173']
-
-app.use(cors({origin: allowedOrigins ,credentials: true}));
+app.use(cors(
+    {
+        origin: ["http://localhost:5173"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+));
 app.use(express.json());
 app.use(cookieParser());
 
