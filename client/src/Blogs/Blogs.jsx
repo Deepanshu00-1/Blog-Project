@@ -28,7 +28,7 @@ const Blogs = () => {
   },[])
 
   const deleteBlog = (id)=>{
-    axios.delete(backendUrl + `/api/blog/delete-blog/${id}`)
+    axios.delete('https://blog-project-server-bdn5.onrender.com' + `/api/blog/delete-blog/${id}`)
     .then(result => {
       console.log(result)
       toast.success(result.data.message)
