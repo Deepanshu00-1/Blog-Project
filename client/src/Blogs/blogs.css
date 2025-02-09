@@ -1,0 +1,118 @@
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 8vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-btn{
+  padding: 7px;
+  width: 6vw;
+  border-radius: 8px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.header-btn:hover{
+  border: 2px solid grey;
+}
+.blogs{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+.leftside{
+  height: 100%;
+  width: 20%;
+  background-color: rgb(73, 155, 155);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.leftside-btn{
+  padding: 5px;
+  width: 6vw;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.rightside{
+  height: 100%;
+  width: 80%;
+  background-color: rgb(181, 203, 223);
+}
+.rightside .blog{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 55vh;
+  width: 75vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  display: flex;
+}
+.blog .data{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.blog .img{
+  width: 30%;
+  height: 100%;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.data .info{
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.data .action{
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  display: flex;
+}
+.action .actions{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.actions-btn{
+  height: 5vh;
+  width: 6vw;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+.actions-btn:hover{
+  background-color: aquamarine;
+  border: 2px solid #fff;
+}
+.actions .delete-btn{
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+  background-color: crimson;
+  color: #fff;
+  width: 6vw;
+}
+.action .time{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+working of packages
+
+express - to create app
+cors - allow us to connect backend with frontend
+dotenv - help to store environment variables in backend
+nodemon - help us to restart backend whenever we change code
+jsonwebtoken - create token for authentication
+mongoose - help us to connect with mongodb database
+bryptjs - encrypt the password and save in database
+nodemailer - will help us to send the email
+cookie-parser - help us to send cookies in API response
