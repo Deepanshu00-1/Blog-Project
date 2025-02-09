@@ -15,7 +15,7 @@ const CreateBlog = ()=>{
 
     const createBlog = async(e)=>{
         e.preventDefault();
-        const {data} = await axios.post(backendUrl + '/api/blog/create-blog', {title, content})
+        const {data} = await axios.post('https://blog-project-server-bdn5.onrender.com' + '/api/blog/create-blog', {title, content})
             
             if(data.success){
                 navigate('/blogs')
