@@ -17,7 +17,7 @@ const UpdateBlog = ()=>{
     axios.defaults.withCredentials = true;
 
     useEffect(()=>{
-        axios.get(backendUrl + `/api/blog/get-blog/${id}`)
+        axios.get('https://blog-project-server-bdn5.onrender.com' + `/api/blog/get-blog/${id}`)
         .then(result => {
             setTitle(result.data.blog.title)
             setContent(result.data.blog.content)
