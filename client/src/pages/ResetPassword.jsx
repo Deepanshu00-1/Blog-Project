@@ -63,7 +63,7 @@ const ResetPassword = () => {
     const onSubmitNewPassword = async(e)=>{
         e.preventDefault()
         try {
-            const {data} = await axios.post(backendUrl + "/api/auth/reset-password", {email, otp, newPassword})
+            const {data} = await axios.post('https://blog-project-server-bdn5.onrender.com' + "/api/auth/reset-password", {email, otp, newPassword})
             data.success ? toast.success(data.message) : toast.error(data.message)
             data.success && navigate('/login')
         } catch (error) {
